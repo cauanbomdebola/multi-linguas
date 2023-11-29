@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página MonyeMinds Multilíngue</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(189, 152, 152);
+            color: #333;
+        }
+
+        #language-selector {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .flag {
+            width: 30px;
+            height: 20px;
+            margin-right: 5px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #content {
+            margin: 50px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(133, 70, 70, 0.1);
+        }
+
+        h1 {
+            color: #ff0000;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+
+    <div id="language-selector">
+        <img class="flag" src="imgs/eua.png" alt="English" onclick="changeLanguage('en')">
+        <img class="flag" src="imgs/espanha.png" alt="Spanish" onclick="changeLanguage('es')">
+        <img class="flag" src="imgs/frança.png" alt="French" onclick="changeLanguage('fr')">
+    </div>
+
+    <div id="content">
+        <h1 id="title">Bem-vindo à IUpgradWeb - Sua Parceira em Assistência e Melhoramento Web!</h1>
+        <p id="content-text">Bem-vindo à IUpgradeWeb, uma empresa dedicada à Assistência e Melhoramento Web, onde
+            acreditamos que a presença online eficaz é fundamental para o sucesso nos dias de hoje. Em um mundo cada vez
+            mais digital, reconhecemos a importância de websites e plataformas online que não apenas representam
+            empresas, mas também proporcionam experiências envolventes aos usuários. Na IUpgradeWeb, estamos
+            comprometidos em levar a sua presença online a novos patamares, combinando expertise técnica com uma
+            abordagem centrada no cliente. <br><br>
+            Nosso objetivo na IUpgradeWeb é ir além da simples criação de websites, proporcionando uma gama completa de
+            serviços de assistência e aprimoramento web. Entendemos que a tecnologia está em constante evolução, e é por
+            isso que nos esforçamos para oferecer soluções que acompanhem as últimas tendências e tecnologias. Seja você
+            uma startup ambiciosa, uma pequena empresa local ou uma corporação estabelecida, nossos serviços são
+            adaptados para atender às suas necessidades específicas.<br><br>
+            Na IUpgradeWeb, destacamos-nos por nossa abordagem holística. Não apenas construímos websites visualmente
+            impressionantes, mas também nos concentramos em otimização, segurança e usabilidade. Nossa equipe de
+            especialistas em desenvolvimento web, design gráfico e marketing digital trabalha em colaboração para
+            garantir que sua presença online não apenas atraia a atenção, mas também converta visitantes em clientes
+            satisfeitos.<br><br>
+            Acreditamos que a chave para o sucesso online vai além do lançamento inicial de um site. É por isso que
+            oferecemos serviços contínuos de suporte e aprimoramento. Manter sua presença digital atualizada e alinhada
+            com as expectativas do mercado é vital, e na IUpgradeWeb, estamos aqui para apoiar sua jornada digital em
+            todas as etapas.<br><br>
+            Em resumo, na IUpgradeWeb, não apenas construímos websites; construímos experiências digitais que
+            impulsionam o seu sucesso. Seja qual for o estágio em que sua empresa se encontra, estamos prontos para
+            ajudar a aprimorar e otimizar sua presença online. Junte-se a nós na busca por uma presença digital mais
+            forte e impactante.</p>
+    </div>
+
+    <script>
+        function changeLanguage(language) {
+            const titleElement = document.getElementById('title');
+            const contentElement = document.getElementById('content-text');
+
+
+            if (language === 'en') {
+                titleElement.textContent = 'Welcome to IUpgradWeb - Your Partner in Web Assistance and Enhancement!';
+                contentElement.textContent = 'Welcome to IUpgradeWeb, a company dedicated to Web Assistance and Enhancement, where we believe that effective online presence is crucial for success in todays world. In an increasingly digital age, we recognize the importance of websites and online platforms that not only represent businesses but also provide engaging user experiences. At IUpgradeWeb, we are committed to taking your online presence to new heights, combining technical expertise with a customer-centric approach. Our goal at IUpgradeWeb is to go beyond simple website creation, providing a complete range of web assistance and enhancement services. We understand that technology is constantly evolving, and thats why we strive to offer solutions that keep up with the latest trends and technologies. Whether you are an ambitious startup, a small local business, or an established corporation, our services are tailored to meet your specific needs. At IUpgradeWeb, we stand out for our holistic approach. We dont just build visually stunning websites; we also focus on optimization, security, and usability. Our team of experts in web development, graphic design, and digital marketing works collaboratively to ensure that your online presence not only attracts attention but also converts visitors into satisfied customers. We believe that the key to online success goes beyond the initial launch of a website. Thats why we offer ongoing support and enhancement services. Keeping your digital presence up to date and aligned with market expectations is vital, and at IUpgradeWeb, we are here to support your digital journey at every step. In summary, at IUpgradeWeb, we dont just build websites; we build digital experiences that drive your success. Whatever stage your business is at, we are ready to help enhance and optimize your online presence. Join us in the quest for a stronger and more impactful digital presence.';
+            } else if (language === 'es') {
+                titleElement.textContent = '¡Bienvenido a IUpgradeWeb - ¡Tu Socio en Asistencia y Mejora Web!';
+                contentElement.textContent = 'Bienvenido a IUpgradeWeb, una empresa dedicada a la Asistencia y Mejora Web, donde creemos que la presencia online efectiva es fundamental para el éxito en el mundo actual. En una era cada vez más digital, reconocemos la importancia de sitios web y plataformas en línea que no solo representan a las empresas, sino que también brindan experiencias atractivas para los usuarios. En IUpgradeWeb, estamos comprometidos a llevar tu presencia online a nuevos horizontes, combinando experiencia técnica con un enfoque centrado en el cliente. Nuestro objetivo en IUpgradeWeb es ir más allá de la simple creación de sitios web, proporcionando una gama completa de servicios de asistencia y mejora web. Entendemos que la tecnología está en constante evolución, y es por eso que nos esforzamos por ofrecer soluciones que sigan las últimas tendencias y tecnologías. Ya sea una startup ambiciosa, una pequeña empresa local o una corporación establecida, nuestros servicios están adaptados para satisfacer tus necesidades específicas.En IUpgradeWeb, nos destacamos por nuestro enfoque holístico. No solo construimos sitios web visualmente impresionantes, sino que también nos centramos en la optimización, seguridad y usabilidad. Nuestro equipo de expertos en desarrollo web, diseño gráfico y marketing digital trabaja en colaboración para garantizar que tu presencia online no solo atraiga la atención, sino que también convierta a los visitantes en clientes satisfechos.Creemos que la clave para el éxito online va más allá del lanzamiento inicial de un sitio web. Es por eso que ofrecemos servicios continuos de soporte y mejora. Mantener actualizada tu presencia digital y alineada con las expectativas del mercado es vital, y en IUpgradeWeb, estamos aquí para apoyar tu jornada digital en todas las etapas.En resumen, en IUpgradeWeb, no solo construimos sitios web; creamos experiencias digitales que impulsan tu éxito. Sea cual sea la etapa en la que se encuentre tu empresa, estamos listos para ayudarte a mejorar y optimizar tu presencia online. Únete a nosotros en la búsqueda de una presencia digital más fuerte e impactante.';
+            } else if (language === 'fr') {
+                titleElement.textContent = 'Bienvenue sur IUpgradeWeb - Votre Partenaire en Assistance et Amélioration Web!';
+                contentElement.textContent = 'Bienvenue chez IUpgradeWeb, une entreprise dédiée à lAssistance et à lAmélioration Web, où nous croyons quune présence en ligne efficace est cruciale pour le succès dans le monde daujourdhui. À une époque de plus en plus numérique, nous reconnaissons limportance des sites Web et des plateformes en ligne qui ne représentent pas seulement des entreprises, mais offrent également des expériences utilisateur engageantes. Chez IUpgradeWeb, nous nous engageons à porter votre présence en ligne à de nouveaux sommets, en associant une expertise technique à une approche centrée sur le client. Notre objectif chez IUpgradeWeb est de dépasser la simple création de sites Web, en fournissant une gamme complète de services dassistance et damélioration web. Nous comprenons que la technologie évolue constamment, cest pourquoi nous nous efforçons doffrir des solutions qui suivent les dernières tendances et technologies. Que vous soyez une start-up ambitieuse, une petite entreprise locale ou une entreprise établie, nos services sont adaptés pour répondre à vos besoins spécifiques. Chez IUpgradeWeb, nous nous démarquons par notre approche holistique. Nous ne construisons pas seulement des sites Web visuellement impressionnants, nous nous concentrons également sur loptimisation, la sécurité et la convivialité. Notre équipe dexperts en développement web, design graphique et marketing numérique travaille en collaboration pour garantir que votre présence en ligne attire non seulement lattention, mais convertisse également les visiteurs en clients satisfaits. Nous croyons que la clé du succès en ligne va au-delà du lancement initial dun site Web. Cest pourquoi nous proposons des services continus de support et damélioration. Maintenir votre présence numérique à jour et alignée sur les attentes du marché est essentiel, et chez IUpgradeWeb, nous sommes là pour soutenir votre parcours numérique à chaque étape. En résumé, chez IUpgradeWeb, nous ne construisons pas seulement des sites Web ; nous créons des expériences numériques qui favorisent votre succès. Quel que soit le stade où se trouve votre entreprise, nous sommes prêts à vous aider à améliorer et optimiser votre présence en ligne. Rejoignez-nous dans la quête dune présence numérique plus forte et plus impactante.';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
